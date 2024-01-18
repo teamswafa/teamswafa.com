@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWAFA I LIBRARY</title>
+    <div class="main">
+        <div class="box4">
+            <div class="box">
+            <h1>TEAM<Br><span>SWAFA</span></h1></div>
+                 <div class="box1">
+                <h2>OUR <span>LIBRARY</span></h2></div>
+                <form id="search-form">
+                    <input type="text" id="search-box" placeholder="Search our Books">
+                    <button>GO</button>
+                </form>
+                <div>
+                    <div class="main2">
+                    <div class="container"> <br><br><br><br><br><br><br><br><br><br><br>
+                        <div class="image-container">
+                        <embed src= "/images/library/THE VOICE.pdf" type=""> 
+                        <br>
+                        <embed src= "/images/library/THE ORION.pdf" type=""> 
+                       <br>
+                       <embed src= "/images/library/പ്രദിധ്വനി.pdf" type=""> 
+                       <br>
+                       <embed src= "/images/library/INDEPENDENCE.pdf" type=""> 
+                      
+                                 
+
+                  </div>
+                   <div class="open">
+                    <a href="images/library/THE VOICE.pdf">OPEN</a>
+                   </div>
+                   <div class="open1">
+                    <a href="/images/library/THE ORION.pdf">OPEN</a>
+                   </div>
+                   <div class="open2">
+                    <a href="images/library/പ്രദിധ്വനി.pdf">OPEN</a>
+                   </div>
+                   <div class="open3">
+                    <a href="images/library/INDEPENDENCE.pdf">OPEN</a>
+                   </div>
+                  </div>
+                  
+                  <script>
+                    document.querySelectorAll('.image-container img').forEach(image =>{
+                        image.onclick = () =>{
+                            document.querySelector('.popup-image').style.display = 'block';
+                            document.querySelector('.popup-image img').src = image.getAttribute('src');
+                        }
+                    });
+                  
+                    document.querySelector('.popup-image span').onclick = () => {
+                        document.querySelector('.popup-image').style.display = 'none';
+                    }
+                  </script>
+                    
+        </div>
+    </head>
+    <body>
+        <style>
+      *{
+           padding: 0;
+           margin: 0;
+           margin-right: 0;
+           font-family: "montserrat";
+       }
+       body{
+           height: 100%;
+       }
+       .main2{
+         background-color: rgb(75, 109, 138);
+         margin-top: 40px;
+         height: 800px;
+       }
+       
+       .container h1{
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: normal;
+        padding: 15px;
+        color: #333;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .container .image-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding: 10px;
+    }
+    .container .image-container .image{
+        height: 250px;
+        width: 350px;
+        border: 10px solid #2e2c2c;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        overflow: hidden;
+        cursor: pointer;
+           }
+    .container .image-container .image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: .2s linear;
+    }
+    .container .image-container .image:hover img{
+        transform: scale(1.1);
+
+    }
+    .container .popup-image{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.9);
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        display: none;
+    }
+    .container .popup-image span{
+        position: absolute;
+        top: 0; right: 10px;
+        font-size: 60px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .container .popup-image img{
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        border: 15px solid #fff;
+        border-radius: 5px;
+        width: 750px;
+        object-fit: cover;
+        border-top: 35px solid #fff;
+    }
+
+    @media (max-width:768px) {
+        .container .popup-image img{
+            width: 95%;
+        }
+    }
+    .image-container h2{
+        margin-left: -361px;
+        margin-top: 286px;
+    }
+       .main .box4 {
+             margin: 0;
+             margin-top: -2vh;
+             width: 2000px;
+             height: 157px;
+             background-color: #ffffff;
+             background-color: #24252a;
+             border-bottom: 2px solid white;
+             box-shadow: 0 0 10px #6f6a6a;
+          }
+          h1{
+      font-family: "montserrat";
+      color: rgb(255, 255, 255);
+      font-size: 30px;
+      margin-left: 90pt;
+      padding-top: 40pt;
+      align-content: center;
+    }
+    
+    h1 span{
+       color: aqua;
+       margin-left: -10px;
+     }
+    .main h1:hover{
+       font-size: 35px;
+       cursor: pointer;
+    }
+    form{
+        width: 90%;
+        max-width: 290px;
+        margin-top: -12px;
+        margin-left: 1457px;
+        height: 45px;
+        background: #6c6f7a;
+        display: flex;
+        align-items: center;
+        border-radius: 40px;
+    }
+    form input{
+        flex: 1;
+        height: 100%;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        color: #fff;
+        font-size: 18px;
+        padding: 0 30px;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+    ::placeholder{
+       color: #fff;
+       font-size: 18px;
+       font-weight: 500;
+    }
+    
+    form button{
+       margin-top: 1;
+      margin-left: -60px;
+      width: 100px;
+      height: 45px; 
+      text-align: center;
+       font-size: 18px;
+      background-color: #ff3929;
+       color: #fff;
+      border: none;
+      border-top-right-radius: 20px;
+     border-bottom-right-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    form button a{
+    text-decoration: none;
+    color: #fff;
+    }
+    form button:hover{
+    background-color: #ba473e;
+    }
+    h2{
+    font-family: "montserrat";
+    color: rgb(181, 75, 19);
+    font-size: 65px;
+    padding-top: 80pt;
+    margin-top: -217px;
+    margin-left: 701px;
+    background: none;
+    }
+    h2:hover{
+    font-size: 68px;
+    cursor: pointer;
+    text-shadow: 3px 3px 100px rgba(229, 229, 229, 0.345);
+    }
+    .box{
+    width: 212px;
+    height: 166px;
+    }
+    .box1{
+    width: fit-content;
+    height: 140px;
+    background: transparent;
+    }
+    form input:focus{
+        border: 1px solid rgb(141, 111, 111);
+        border-radius: 40px;
+    }
+    .open a{
+        text-decoration: none;
+        background-color: aqua;
+
+        border-radius: 15px;
+        text-align: center;
+        font-weight: 700;
+        font-family: "montserrat";
+        margin-left: 379px;
+    }
+    .open a:hover{
+        background-color: rgb(42, 136, 136);
+    }
+    .open1 a{
+        text-decoration: none;
+        background-color: aqua;
+
+        border-radius: 15px;
+        text-align: center;
+        font-weight: 700;
+        font-family: "montserrat";
+        margin-left: 803px;
+        margin-top: 10px;
+    }
+    .open1 a:hover{
+        background-color: rgb(42, 136, 136);
+    }
+    .open2 a{
+        text-decoration: none;
+        background-color: aqua;
+
+        border-radius: 15px;
+        text-align: center;
+        font-weight: 700;
+        font-family: "montserrat";
+        margin-left: 379px;
+    }
+    .open2 a:hover{
+        background-color: rgb(42, 136, 136);
+    }
+    .open3 a{
+        text-decoration: none;
+        background-color: aqua;
+
+        border-radius: 15px;
+        text-align: center;
+        font-weight: 700;
+        font-family: "montserrat";
+        margin-left: 379px;
+    }
+    .open3 a:hover{
+        background-color: rgb(42, 136, 136);
+    }
+  </style>
+</body>
+</html>

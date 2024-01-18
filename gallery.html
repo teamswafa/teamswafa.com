@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWAFA I GALLERY</title>
+</head>
+<body>
+    <div class="gmain">
+           <div class="box">
+            <br>
+        <h1>SNAPSHOT</h1>
+        <h2>SNAPSHOT</h2>
+      </div>
+        <nav>
+          <a href="f65.html"><span>H</span> HOME <span>H</span></a>
+          <a href="project.html"><span>H</span> PROJECTS <span>H</span></a>
+          <a href="gallery.html"><span>H</span> GALLERY <span>H</span></a>
+          <a href="about.html"><span>H</span> ABOUT <span>H</span></a>
+          <a href="contact.html"><span>H</span> CONTACT <span>H</span></a>
+      </nav>
+      <form id="search-form">
+        <input type="text" id="search-box" placeholder="Search">
+        <button>GO</button>
+    </form>
+    <img class="png" src="www.png">
+    <br><br><br><br>
+    <div class="container">
+      <div class="image-container">
+      <div class="image"><img src="/images/gallery/6.jpg" alt=""></div>
+     <div class="image"><img src="/images/gallery/1111.jpg" alt=""></div>
+     <div class="image"><img src="images/gallery/1.jpg" alt=""></div>
+    <div class="image"><img src="images/gallery/10.jpg" alt=""></div>
+     <div class="image"><img src="images/gallery/11.jpg" alt=""></div>
+     <div class="image"><img src="images/gallery/12.jpg" alt=""></div>
+     <div class="image"><img src="images/gallery/13.jpg" alt=""></div>
+     <div class="image"><img src="images/gallery/14.jpg" alt=""></div>
+     <div class="image"><img src="images/gallery/21.jpg" alt=""></div>
+     <div class="image"><img src="images/gallery/16.jpg" alt=""></div>
+     <div class="image"><img src="images/gallery/17.jpg" alt=""></div>
+     <div class="image"><img src="images/gallery/18.jpg" alt=""></div>
+     <div class="image"><img src="images/gallery/19.jpg" alt=""></div>
+     <div class="image"><img src="images/gallery/2.jpg" alt=""></div>
+     <div class="image"><img src="images/gallery/20.jpg" alt=""></div>
+
+     
+     <div class="popup-image">
+  <span>&times;</span>
+  
+  <img src="mos.png" alt="">
+  
+
+</div>
+</div>
+
+<script>
+  document.querySelectorAll('.image-container img').forEach(image =>{
+      image.onclick = () =>{
+          document.querySelector('.popup-image').style.display = 'block';
+          document.querySelector('.popup-image img').src = image.getAttribute('src');
+      }
+  });
+
+  document.querySelector('.popup-image span').onclick = () => {
+      document.querySelector('.popup-image').style.display = 'none';
+  }
+</script>
+  </div>
+     <style>
+     *{
+       padding: 0;
+       margin: 0;
+       margin-right: 0;
+       font-family: "montserrat";
+   }
+   body{
+       height: 100%;
+   }
+     .gmain{
+   background-color: #24252a;
+   height: 100%;
+   width: 100%;
+}
+
+       .container h1{
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: normal;
+        padding: 15px;
+        color: #333;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .container .image-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding: 10px;
+    }
+    .container .image-container .image{
+        height: 350px;
+        width: 350px;
+        border: 0px solid #fff;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .container .image-container .image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: .2s linear;
+    }
+    .container .image-container .image:hover img{
+        transform: scale(1.1);
+    }
+    .container .popup-image{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.9);
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        display: none;
+    }
+    .container .popup-image span{
+        position: absolute;
+        top: 0; right: 10px;
+        font-size: 60px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .container .popup-image img{
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        border: 15px solid #fff;
+        border-radius: 5px;
+        width: 750px;
+        object-fit: cover;
+        border-top: 35px solid #fff;
+    }
+
+    @media (max-width:768px) {
+        .container .popup-image img{
+            width: 95%;
+        }
+    }
+
+h1{
+  font-family: "montserrat";
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  padding-top: 25pt;
+  align-content: center;
+  font-weight: bolder;
+  overflow: hidden; 
+  opacity: 8%;
+  margin-top: 0px;
+  margin-left: 88px;
+ }
+ h2{
+  font-family: "montserrat";
+  color: rgb(238, 6, 6);
+  font-size: 65px;
+  padding-top: 80pt;
+  align-content: center;
+  margin-top: -201px;
+  opacity: 99%;
+  margin-left: 162px;
+ }
+h2:hover{
+    font-family: "montserrat";
+  color: rgb(238, 6, 6);
+  font-size: 90px;
+  align-content: center; 
+  cursor: pointer;
+  margin-top: -216px;
+  margin-left: 88px;
+ }
+ .gmain .png{
+   background-position: center;
+   background-size: cover;
+   margin-left: -7px;
+   margin-top: 46px;
+   width: 1947px;
+   height: 80px;
+}
+.box{
+  width: 610px;
+  height: 166px;
+}
+.gmain nav a:hover{
+   font-size: 1.2rem;
+   cursor: pointer;
+   color: #ffffff;
+   border-bottom: 3px solid #ff3929;
+   margin-bottom: 10px;
+   color: #ff3929;
+}
+.gmain nav{              
+   margin-top: -60pt;
+   margin-left: 586pt;
+   display: flex;
+   
+}
+.gmain nav a{
+   text-decoration: none;
+   color: #fff;
+   font-family: "montserrat";
+   font-weight: bold;
+   font-size: 1.1rem;
+   margin: 0.6rem;
+}
+.gmain nav span{
+   color: transparent;
+   padding-bottom: 15px;
+}
+.gmain nav a:nth-child(3){
+  margin-bottom: 10px;
+   color: #ff3929;
+   border-bottom: 3px solid #ff3929;
+}
+form{
+    width: 90%;
+    max-width: 290px;
+    margin-top: -46px;
+    margin-left: 1527px;
+    height: 45px;
+    background: #6c6f7a;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+form input{
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 30px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+::placeholder{
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+}
+
+form button{
+   margin-top: 1;
+  margin-left: -60px;
+  width: 100px;
+  height: 45px; 
+  text-align: center;
+   font-size: 18px;
+  background-color: #ff3929;
+   color: #fff;
+  border: none;
+  border-top-right-radius: 8px;
+ border-bottom-right-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+form button a{
+text-decoration: none;
+color: #fff;
+}
+form button:hover{
+background-color: #ba473e;
+}
+form input:focus{
+    border: 1px solid rgb(231, 224, 224);
+    border-radius: 8px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+.container .imageco{
+height: 250px;
+width: 350px;
+border: 10px solid #fff;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+overflow: hidden;
+cursor: pointer;
+}
+.container .imageco img{
+  height: 100%;
+  width: 100%;
+}
+
+     </style> 
+     <script>
+        function fun(){
+        document.getElementById("frame1").style.visibility = "visible";
+         document.getElementById("frame1").classList.add("style");
+        }
+    
+        function remove(){
+            document.getElementById("frame1").classList.remove("style");
+            document.getElementById("frame1").style.visibility = "hidden";
+        }
+    </script>
+</body>
+</html>

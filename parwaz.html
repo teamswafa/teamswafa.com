@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARWAZ 2K21</title>
+    <div class="main">
+        <div class="txt"><br><br>
+        <center><h1>PARWAZ 2K21</h1></center></div>
+         <h2>Dream Big, Fly High</h2>
+        <p>This is our secondary first year class fest</p>
+       <h1 id="h1"><br><span> click "final result" to see your team positions</span></h1> 
+        <div class="buttons">
+        <button class="buttons" id="btn" onclick="result()">FINAL RESULT</button>
+      </div>
+      <div class="box"></div>
+       <h4>BATELEOUR</h4>
+       <div class="box1"></div>
+       <h5>EAGLE</h5>
+       <div class="box2"></div>
+       <h6>FALCON</h6>
+       <div class="box3"></div>
+       <small>RAPTOR</small>
+      <h3>Details is not Available</h3>
+</head>
+<body>
+    <style>
+        *{
+   padding: 0;
+   margin: 0;
+   margin-right: 0;
+   font-family: "montserrat";
+   }
+   body{
+   height: 100vh;
+   } 
+   .main{
+   background-color: rgb(69, 147, 215);
+   height: 100%;
+   width: 100%;
+   }
+   h1{
+   font-family: "montserrat";
+   color: rgb(255, 72, 0);
+   font-size: 90px;
+   padding-top: 25pt;
+   align-content: center;
+   font-weight: bolder;
+   overflow: hidden; 
+   margin-top: 0px;
+   margin-left: 354px;
+   }
+   h1:hover{
+   font-family: "montserrat";
+   color: rgb(145, 56, 21);
+   font-size: 93px;
+   font-size: 100px;
+   align-content: center; 
+   cursor: pointer;
+      }
+      .txt{
+        width: 1400px;
+      }
+      p{
+        font-size: 15pt;
+        font-family: "montserrat";
+        font-weight: 600;
+        margin-top: 23px;
+        margin-left: 664px;
+        color: floralwhite;
+        word-spacing: 3px;
+        }
+.buttons{
+    width: 28%;
+}
+
+.buttons button{
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    height: 70px;
+    border: 2px solid white;
+    font-size: 30px;
+    background: #24252a;
+    font-family: "montserrat";
+    text-align: left;
+    transition: transform 0.4s, height 0.3s, border 0s,box-shadow 0.5s;
+    margin-top: 400px;
+    margin-left: 164px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.buttons button:hover{
+    height: 80px;
+    transform: scale(1.10);
+    border: 5px solid rgb(19, 131, 110);
+    box-shadow: 5px 5px 50px rgb(19, 131, 110);
+    color:rgb(19, 131, 110) ;
+}
+
+.space{
+    visibility: hidden;
+}
+#h1{
+    position: fixed;
+    width: 35%;
+    height: 350px;
+    background: #ffffff;
+    border-radius: 30px;
+    margin-left: 43%;
+    margin-top: 187px;
+    padding: 60px 50px;
+    font-size: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 80px;
+}
+h2{
+    margin-top: -17px;
+    margin-left: 960px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+#h1 span{
+    font-size: 15px;
+    font-style: italic;
+    color: #4d4d4f;
+    font-weight: 400;
+    margin-left: 190px;  
+    
+}
+h3{
+    margin-top: 295px;
+    margin-left: 760px;
+
+}
+.box{
+    width: 200px;
+    height: 65px;
+    background-color: #24252a;
+    border-radius: 15px;
+    margin-top: -392px;
+    margin-left: 347px;
+}
+.box:hover{
+    cursor: pointer;
+    background-color: #3a3b3e;
+}
+h4{
+    color: white;
+    font-size: 30px;
+    margin-top: -52px;
+    margin-left: 392px;
+   cursor: pointer;
+}
+.box1{
+    width: 200px;
+    height: 65px;
+    background-color: #24252a;
+    border-radius: 15px;
+    margin-top: -50px;
+    margin-left: 713px;
+}
+.box1:hover{
+    cursor: pointer;
+    background-color: #3a3b3e;
+}
+h5{
+    color: white;
+    font-size: 30px;
+    margin-top: -52px;
+    margin-left: 392px;
+   cursor: pointer;
+}
+.box2{
+    width: 200px;
+    height: 65px;
+    background-color: #24252a;
+    border-radius: 15px;
+    margin-top: -392px;
+    margin-left: 347px;
+}
+.box2:hover{
+    cursor: pointer;
+    background-color: #3a3b3e;
+}
+h6{
+    color: white;
+    font-size: 30px;
+    margin-top: -52px;
+    margin-left: 392px;
+   cursor: pointer;
+}
+.box3{
+    width: 200px;
+    height: 65px;
+    background-color: #24252a;
+    border-radius: 15px;
+    margin-top: -392px;
+    margin-left: 347px;
+}
+.box3:hover{
+    cursor: pointer;
+    background-color: #3a3b3e;
+}
+small{
+    color: white;
+    font-size: 30px;
+    margin-top: -52px;
+    margin-left: 392px;
+   cursor: pointer;
+}
+</style>
+<script>
+ const h1 = document.getElementById("h1")
+
+function result(){
+    h1.innerHTML = `1<sup>st</sup>-RAPTOR <br> 2<sup>nd</sup>-BATELEOLOUR <br> 3<sup>rd</sup>-EAGLE <br> </span> 4<sup>th</sup>-FALCON`
+}
+</script>
+</body>
+</html>

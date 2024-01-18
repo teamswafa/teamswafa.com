@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUT REACH</title>
+</head>
+<body>
+    <div class="main"><br><br>
+        <center><h1>OUT REACH</h1></center>
+        <br><br><br><br><br><br>
+        <div class="container">
+            <div class="image-container">
+            <div class="image"><img src="images/outreach/ANAS HIFZ.jpg" alt=""></div>
+            <br>
+           <div class="image"><img src="images/outreach/QIRATH.jpg" alt=""></div>
+           <br>
+           <div class="image"><img src="images/outreach/HIFZ 2.jpg" alt=""></div>
+          
+                     
+           <div class="popup-image">
+        <span>&times;</span>
+        
+        <img src="images/outreach/ANAS HIFZ.jpg" alt="">
+        
+      
+      </div>
+      </div>
+      
+      <script>
+        document.querySelectorAll('.image-container img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+      
+        document.querySelector('.popup-image span').onclick = () => {
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+      </script>
+                 </div>
+       <style>
+     *{
+padding: 0;
+margin: 0;
+margin-right: 0;
+font-family: "montserrat";
+}
+body{
+height: 100vh;
+}
+.container h1{
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: normal;
+        padding: 15px;
+        color: #333;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .container .image-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding: 10px;
+    }
+    .container .image-container .image{
+        height: 250px;
+        width: 350px;
+        border: 10px solid #fff;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        overflow: hidden;
+        cursor: pointer;
+           }
+    .container .image-container .image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: .2s linear;
+    }
+    .container .image-container .image:nth-child(6){
+        margin-top: -3px;
+    }
+    .container .image-container .image:hover img{
+        transform: scale(1.1);
+    }
+    .container .popup-image{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.9);
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        display: none;
+    }
+    .container .popup-image span{
+        position: absolute;
+        top: 0; right: 10px;
+        font-size: 60px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .container .popup-image img{
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        border: 15px solid #fff;
+        border-radius: 5px;
+        width: 750px;
+        object-fit: cover;
+        border-top: 35px solid #fff;
+    }
+
+    @media (max-width:768px) {
+        .container .popup-image img{
+            width: 95%;
+        }
+    }
+    .image-container h2{
+        margin-left: -361px;
+        margin-top: 286px;
+    }
+.main{
+background-color: rgb(37, 163, 54);
+height: 100%;
+width: 100%;
+}
+h1{
+font-family: "montserrat";
+color: rgb(42, 43, 44);
+font-size: 90px;
+padding-top: 25pt;
+align-content: center;
+font-weight: bolder;
+overflow: hidden; 
+margin-top: 0px;
+margin-left: -62px;
+}
+h1:hover{
+font-family: "montserrat";
+color: rgb(20, 21, 21);
+font-size: 93px;
+align-content: center; 
+cursor: pointer;
+}
+h2{
+    margin-top: 20px;
+    margin-left: 410px;
+}
+
+
+
+ </style> 
+</body>
+</html>
